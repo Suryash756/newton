@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Newton</title>
+        <link rel="shotcut icon" href="https://newton.gr/wp-content/uploads/2019/05/logo_newton_square.png"></link>
+    </head>
+    <body>
+    <center>
+        <img height="300px" width="300px" src="https://newton.gr/wp-content/uploads/2019/05/logo_newton_square.png" alt="newton">
+       </center>
+       <center>
+        <span>
+            <input id="search" placeholder="enter name of website">
+            <button onclick="search2()">Search</button>
+        </span>
+        <p><strong>in case of any problem or suggestion contact on my phone number  <blink><strong>+91 9102109828</strong></blink></strong></p>
+    </center>
+    </body>
+    <style>
+        body{
+            background: linear-gradient(90deg, #faf0cd, #fab397);
+            border:solid;
+            border-width:5px;
+        }
+        img{
+            margin-top: 50px;
+        }
+        input{
+            height:50px;
+            width:600px;
+            border:solid;
+            font-weight:bold;
+        }
+        button{
+            height:50px;
+            width:100px;
+            border:solid;
+            background-color:orange;
+            font-weight:bold;
+            font-size:15px;
+            transition: transform.2s;
+        }
+        button:hover{
+            transform:scale(0.9);
+        }
+        p{
+            text-decoration:underline;
+            font-weight:bold;
+        }
+    </style>
+    <script>
+        
+       function search2(){
+        search=document.getElementById("search").value;
+        location.href="https://www."+search+".com";
+        
+       }
+        </script>
+</html>
